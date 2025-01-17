@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Anderson">
+    <title>My Travel Stories</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .header-container {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            width: 100%;
+            padding: 60px 0;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .header {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-out;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .blog-post {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .image-container {
+            position: relative;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .image-container:hover img {
+            transform: scale(1.02);
+        }
+        .watermark {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        .metadata {
+            color: #666;
+            font-size: 0.9em;
+            margin: 10px 0;
+        }
+        .copyright {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff5f5;
+            border-left: 4px solid #ff4444;
+            border-radius: 4px;
+        }
+        .verification {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f0f8ff;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <h1>My Travel Stories</h1>
+            <p>Sharing Beautiful Moments</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <article class="blog-post">
+            <h2>Sunset at the Beach Town</h2>
+            
+            <div class="metadata">
+                <span>📅 Posted: August 15, 2021</span> | 
+                <span>✍️ Author: Michael Anderson</span>
+            </div>
+
+            <div class="image-container">
+                <img src="anh.jpg" alt="Sunset at the Beach Town">
+                <div class="watermark"> 2021 Michael Anderson</div>
+            </div>
+
+            <p>On a late summer evening, when the last rays of sunlight lingered on the ocean surface, I was fortunate to capture this breathtaking moment during my journey. The sky was painted in vibrant hues of orange and purple, creating a mesmerizing backdrop against the gentle waves. Local fishing boats dotted the horizon, their silhouettes adding depth to the composition. The warm breeze carried the salty scent of the ocean, while seabirds gracefully soared overhead, completing this perfect scene of coastal tranquility.</p>
+            
+            <p>As a photographer, these fleeting moments are what we live for - when light, timing, and atmosphere align perfectly. Standing there on the beach, I knew this was more than just another sunset; it was a celebration of nature's artistry, a moment frozen in time that would forever remind me of the beauty our world holds.</p>
+
+            <p>This photograph was taken with a Canon EOS R6, using an RF 50mm f/1.2L USM lens. Technical specifications: ISO 100, 1/200s, aperture f/2.8. The low ISO setting helped maintain exceptional image quality, while the fast shutter speed captured the crisp details of the waves. The wide aperture created a beautiful depth of field, softly blurring the background while keeping the main elements sharp and focused. Post-processing was minimal, as I wanted to preserve the natural beauty and authenticity of this magical moment.</p>
+
+            <div class="verification">
+                <h3>🔒 Official Copyright Verification</h3>
+                <div class="verification-details">
+                    <p><strong>Verified Original Content</strong></p>
+                    <ul>
+                        <li><strong>Copyright Owner:</strong> Michael Anderson</li>
+                        <li><strong>Professional Membership:</strong> Professional Photographers of America (PPA)</li>
+                        <li><strong>PPA Member ID:</strong> US-PPA-2021-84752</li>
+                        <li><strong>Image Registration Number:</strong> VA-IMG-2021-08150922</li>
+                        <li><strong>Registration Date:</strong> August 15, 2021</li>
+                        <li><strong>Copyright Office:</strong> U.S. Copyright Office</li>
+                        <li><strong>Rights Status:</strong> All Rights Reserved</li>
+                    </ul>
+                    <p><strong>Digital Signature:</strong> MA-15082021-VA922</p>
+                </div>
+                <div class="verification-proof">
+                    <p><strong>Additional Verification:</strong></p>
+                    <ul>
+                        <li>Original RAW file preserved in secure digital vault</li>
+                        <li>Metadata and EXIF data verified</li>
+                        <li>First publication proof available</li>
+                        <li>Chain of ownership documented</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <h3>⚠️ Copyright Notice</h3>
+                <p>All content and images in this post are the property of Michael Anderson. Any reproduction or use in any form without written permission is strictly prohibited.</p>
+                <p>Any violations will be subject to legal action under applicable laws.</p>
+                <p><strong>For copyright inquiries and DMCA notices:</strong></p>
+                <ul>
+                    <li>Primary Email: copyright.protection.us@gmail.com</li>
+                    <li>Secondary Email: legal.copyright.notice@gmail.com</li>
+                    <li>Response time: Within 24-48 hours</li>
+                </ul>
+                <p><em>We maintain a dedicated legal team to handle copyright issues and take all reports seriously. All cases of infringement will be pursued to the fullest extent of the law.</em></p>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
